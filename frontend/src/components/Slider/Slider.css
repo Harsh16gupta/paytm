@@ -1,0 +1,18 @@
+
+.slider-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    color: #000; /* Arrow color */
+  }
+  
+  .slick-dots li button:before {
+    color: #000; /* Dots color */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #000; /* Active dot color */
+  }
