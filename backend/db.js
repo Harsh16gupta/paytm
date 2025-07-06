@@ -1,7 +1,11 @@
 // backend/db.js
+require('dotenv').config(); // Load .env variables
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://harsh16official:H%40rsh$hbtu16mongodb@cluster0.me2cx.mongodb.net/money")
+
+const MONGO_STRING = process.env.MONGO_STRING;
+
+mongoose.connect(MONGO_STRING)
 
 // Create a Schema for Users
 const userSchema = new mongoose.Schema({
